@@ -1,3 +1,5 @@
+"use strict";
+
 let employee = {
   employeeId: 1,
   name: "Ethan",
@@ -12,7 +14,6 @@ function printEmployee(employee) {
   console.log(employee.name);
   console.log(employee.jobTitle);
   console.log(employee.payRate);
-
 }
 
 printEmployee(employee);
@@ -24,7 +25,7 @@ function createPayStub(id, name, payRate, hoursWorked) {
   } else {
     grossPay = 40 * payRate + (hoursWorked - 40) * 1.5 * payRate;
   }
-  
+
   let payStub = {
     employeeId: id,
     name: name,

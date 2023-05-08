@@ -1,3 +1,5 @@
+"use strict";
+
 let message = "This is my message"; //string
 let amount = 29.99; //number
 let isApproved = false; //boolean
@@ -19,8 +21,3 @@ let employee = {
 console.log(employee);
 console.log(employee.payRate); //dot-notation PREFERRED
 console.log(employee["payRate"]); //bracket notation NOT COMMON
-
-
-
-
-
