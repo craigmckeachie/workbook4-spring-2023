@@ -23,6 +23,7 @@ function createPayStub(id, name, payRate, hoursWorked) {
   } else {
     grossPay = 40 * payRate + (hoursWorked - 40) * 1.5 * payRate;
   }
+  
   let payStub = {
     employeeId: id,
     name: name,
