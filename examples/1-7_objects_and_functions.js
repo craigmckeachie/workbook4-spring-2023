@@ -12,6 +12,7 @@ function printEmployee(employee) {
   console.log(employee.name);
   console.log(employee.jobTitle);
   console.log(employee.payRate);
+
 }
 
 printEmployee(employee);
