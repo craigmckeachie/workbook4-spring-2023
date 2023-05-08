@@ -19,3 +19,8 @@ let employee = {
 console.log(employee);
 console.log(employee.payRate); //dot-notation PREFERRED
 console.log(employee["payRate"]); //bracket notation NOT COMMON
+
+
+
+
+
