@@ -14,6 +14,8 @@ let count = 1;
 //   console.log(count);
 // }
 
+//  before loop one time; should I run loop again;end of loop
+//  initialize a count;check count against condition; increment count
 for (let count = 1; count < 100; count++) {
   console.log(count);
 }
