@@ -7,9 +7,10 @@ function getMealCost(orders) {
   return sum;
 }
 
+let item1 = { item: "Chicken Tacos", price: 8.95 };
 
 let myOrder = [
-  { item: "Chicken Tacos", price: 8.95 },
+  item1,
   { item: "Guacamole", price: 2.85 },
   { item: "Sweet Tea", price: 2.75 },
 ];
@@ -26,3 +27,5 @@ console.log("My meal costs " + totalWithTip.toFixed(2));
 mealCost = getMealCost(yourOrder);
 totalWithTip = mealCost * 1.2;
 console.log("Your meal costs " + totalWithTip.toFixed(2));
+
+
