@@ -6,15 +6,16 @@ let menu = [
   { id: 5, item: "Coke", category: "Drink", price: 2.29 },
 ];
 
+
 function getMenuItemsInCategory(menu, category) {
-  let matching = [];
-  let numItems = menu.length;
-  for (let i = 0; i < numItems; i++) {
+  let menuItemsInCategory = [];
+
+  for (let i = 0; i < menu.length; i++) {
     if (menu[i].category == category) {
-      matching.push(menu[i]);
+      menuItemsInCategory.push(menu[i]);
     }
   }
-  return matching;
+  return menuItemsInCategory;
 }
 
 //get all the drinks
