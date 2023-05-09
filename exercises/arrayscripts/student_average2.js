@@ -7,12 +7,16 @@ let students = [
   { name: "Ezra", scores: [100, 99, 100, 87] },
 ]; //array of objects representing students
 
-for (let index = 0; index < students.length; index++) {
-  const student = students[index];
-  console.log(student.name);
-  
-  let averageScore = getAverageScore(student.scores)
-  console.log(averageScore);
+logStudents(students);
+
+function logStudents(students) {
+  for (let index = 0; index < students.length; index++) {
+    const student = students[index];
+    console.log(student.name);
+
+    let averageScore = getAverageScore(student.scores);
+    console.log(averageScore);
+  }
 }
 
 function getAverageScore(scores) {
