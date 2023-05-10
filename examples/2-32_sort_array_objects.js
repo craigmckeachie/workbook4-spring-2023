@@ -10,12 +10,14 @@ let products = [
 //   else return 1;
 // });
 
-// products.sort(function (a, b) {
-//   return a.item < b.item;
-// });
-
 products.sort(function (a, b) {
-  return a.price < b.price;
+  return a.price - b.price;
 });
+
+// products.sort(function (a, b) {
+//   if (a.price < b.price) return -1;
+//   else if (a.price == b.price) return 0;
+//   else return 1;
+// });
 
 console.log(products);

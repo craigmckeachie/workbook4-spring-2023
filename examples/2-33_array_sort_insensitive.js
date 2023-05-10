@@ -8,6 +8,8 @@ names.sort(function (a, b) {
   else if (aUpper == bUpper) return 0;
   else return 1;
 }); // Sorts the array in a case-insensitive way
+
+
 let numNames = names.length;
 for (let i = 0; i < numNames; i++) {
   console.log(names[i]);
