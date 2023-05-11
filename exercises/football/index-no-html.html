@@ -2,16 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Football</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
 </head>
 
 <body>
-    <main>
-
-    </main>
+    <main></main>
 
     <script>
         "use strict";
@@ -24,7 +23,7 @@
 
         let teamsList = document.createElement("select");
         teamsList.id = "teams-list";
-        teamsList.name = "teams"
+        teamsList.name = "teams";
         main.appendChild(teamsList);
 
         let option1 = document.createElement("option");
@@ -42,18 +41,7 @@
         button.name = "displayTeam";
         button.id = "display-button";
         button.innerText = "Display Selected Team";
-        main.appendChild(button)
-
-
-
-
-
-
-
-
-
-
-
+        main.appendChild(button);
     </script>
 </body>
 
