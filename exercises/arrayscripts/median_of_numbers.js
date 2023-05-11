@@ -1,5 +1,3 @@
-
-
 function numericSortAsc(a, b) {
   return a - b;
 }
@@ -13,6 +11,8 @@ function getIndexOfMiddleElement(array) {
 }
 
 function getMedian(numbers) {
+  if (!numbers || numbers.length === 0) throw new Error("No Inputs");
+
   numbers.sort(numericSortAsc);
   let indexOfMiddleElement = getIndexOfMiddleElement(numbers);
   let middleElement = numbers[indexOfMiddleElement];
@@ -27,6 +27,21 @@ function getMedian(numbers) {
 
 let numbers1 = [83, 80, 92, 86, 100];
 let numbers2 = [80, 83, 86, 87, 92, 100];
+let numbers3 = [0.33955843791573237, 1.073205764212215, -0.51182868190794402];
+let numbers4 = [];
 
 console.log(getMedian(numbers1));
 console.log(getMedian(numbers2));
+console.log(getMedian(numbers3));
+
+try {
+  console.log(getMedian(numbers4));
+} catch (error) {
+  console.log(error.message);
+}
+
+try {
+  console.log(getMedian(null));
+} catch (error) {
+  console.log(error.message);
+}
