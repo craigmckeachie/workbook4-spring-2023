@@ -1,8 +1,11 @@
+"use strict";
+
 function numericSortAsc(a, b) {
   return a - b;
 }
 
 function hasOddNumberOfElements(array) {
+  // this is modules not remainder and 0 is falsy and > 0 is truthy
   return array.length % 2;
 }
 
