@@ -73,9 +73,13 @@
             { name: 'Wyoming', abbrev: 'WY' },
         ];
         for (const state of states) {
-            let option = document.createElement("option");
-            option.value = state.abbrev;
-            option.textContent = state.name;
+            // let option = document.createElement("option");
+            // option.value = state.abbrev;
+            // option.textContent = state.name;
+            
+            //OR    
+            let option = new Option(state.name, state.abbrev)
+            
             statesList.appendChild(option);
         }
 
