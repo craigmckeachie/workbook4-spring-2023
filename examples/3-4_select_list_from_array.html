@@ -11,10 +11,11 @@
 
 <body>
     <h2>Select List from Array</h2>
-    <select id="statesList" name="states">
+    <select id="states-list" name="states">
     </select>
 
     <script>
+        let statesList = document.getElementById("states-list");
         const states = [
             { name: 'Alabama', abbrev: 'AL' },
             { name: 'Alaska', abbrev: 'AK' },
@@ -73,7 +74,10 @@
             { name: 'Wyoming', abbrev: 'WY' },
         ];
         for (const state of states) {
-            
+            let option = document.createElement("option");
+            option.value = state.abbrev;
+            option.textContent = state.name;
+            statesList.appendChild(option);
         }
 
     </script>
