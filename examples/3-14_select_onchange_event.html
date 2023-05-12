@@ -112,8 +112,13 @@
       function displaySelectedState() {
         const messageParagraph = document.querySelector("#message-paragraph");
         const stateAbbreviation = statesList.value;
+
         const selectedState = getStateByAbbreviation(stateAbbreviation);
-        messageParagraph.innerText = `${selectedState.name} (${selectedState.abbrev})`;
+        if (selectedState) {
+          messageParagraph.innerText = `${selectedState.name} (${selectedState.abbrev})`;
+        } else {
+          messageParagraph.innerText = "";
+        }
       }
 
       loadStatesList();
