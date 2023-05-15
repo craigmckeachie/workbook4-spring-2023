@@ -12,7 +12,7 @@
   </head>
   <body>
     <main>
-      <select id="category-list">
+      <select id="category-list" onchange="loadMenuItems();">
         <option value="drinks">Drinks</option>
         <option value="entrees">Entrees</option>
         <option value="desserts">Desserts</option>
@@ -20,5 +20,27 @@
 
       <select name="" id="menuItems" size="5"></select>
     </main>
+
+    <script>
+      let menu = {
+        drinks: ["Water", "Tea", "Sweet Tea", "Coke", "Dr. Pepper", "Sprite"],
+        entrees: [
+          "Hamburger w/ Fries",
+          "Grilled Cheese w/ Tater Tots",
+          "Grilled Chicken w/ Veggies",
+          "Chicken Fried Steak w/ Mashed Potatoes",
+          "Fried Shrimp w/ Coleslaw",
+          "Veggie Plate",
+        ],
+        desserts: ["Cheesecake", "Chocolate Cake", "Snickerdoodle Cookie"],
+      };
+
+      function loadMenuItems() {
+        console.log("changed");
+        for (const item of menu.drinks) {
+          console.log(item);
+        }
+      }
+    </script>
   </body>
 </html>
